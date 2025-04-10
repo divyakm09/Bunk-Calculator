@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('https://images.unsplash.com/photo-1531746790731-6c087fecd65a?auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .calculator {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    max-width: 420px;
+    width: 90%;
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  .input-group {
+    margin-bottom: 15px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #222;
+  }
+
+  input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+
+  .result {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px;
+    border-radius: 6px;
+  }
+
+  .result.safe {
+    background-color: #e0f7e9;
+    color: #0a7a35;
+  }
+
+  .result.warning {
+    background-color: #ffe4e1;
+    color: #b30000;
+  }
+
+  .progress-bar-container {
+    background: #ddd;
+    border-radius: 20px;
+    height: 20px;
+    overflow: hidden;
+    margin-top: 15px;
+  }
+
+  .progress-bar {
+    height: 100%;
+    background-color: #4CAF50;
+    width: 0%;
+    text-align: center;
+    color: white;
+    line-height: 20px;
+    font-size: 12px;
+    transition: width 0.3s ease-in-out;
+  }
+
+  @media (max-width: 480px) {
+    .calculator {
+      padding: 20px;
+    }
+
+    h2 {
+      font-size: 20px;
+    }
+  }
